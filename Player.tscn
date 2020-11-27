@@ -27,7 +27,8 @@ tracks/0/keys = {
 position = Vector2( 46, 127 )
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_lock_": true
 }
 
 [node name="Sprite" type="Sprite" parent="."]
