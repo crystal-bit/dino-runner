@@ -44,8 +44,8 @@ func set_godmode(enabled):
 	god_mode = enabled
 	if has_node("Player"):
 		var player = $Player
-		if player.has_node("Area2D"):
-			$Player/Area2D.monitoring = !god_mode
+		if player.has_node("Hitbox"):
+			$Player/Hitbox.monitoring = !god_mode
 	$GUI/Godmode.visible = enabled
 
 
@@ -72,4 +72,8 @@ func show_gameover():
 
 
 func _on_PlayerReference_killed() -> void:
+	show_gameover()
+
+
+func _on_Player_killed() -> void:
 	show_gameover()

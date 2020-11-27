@@ -159,4 +159,4 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-[connection signal="killed" from="Player" to="." method="_on_PlayerReference_killed"]
+[connection signal="killed" from="Player" to="." method="_on_Player_killed"]
