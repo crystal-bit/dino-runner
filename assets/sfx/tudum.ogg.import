@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tudum.ogg-eea96165891da18ac8b2e8f65d6f750f.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/tudum.ogg"
+dest_files=[ "res://.import/tudum.ogg-eea96165891da18ac8b2e8f65d6f750f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://assets/sfx/jump.ogg" type="AudioStream" id=2]
+[ext_resource path="res://assets/dino.png" type="Texture" id=3]
+[ext_resource path="res://assets/sfx/tudum.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Sprite.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "walk"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 46, 127 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -4 )
+texture = ExtResource( 3 )
+hframes = 2
+region_rect = Rect2( 0, 0, 32, 32 )
+script = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+autoplay = "walk"
+anims/walk = SubResource( 1 )
+
+[node name="JumpSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -12.0
+
+[node name="KilledSound" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 4 )
+volume_db = -12.0

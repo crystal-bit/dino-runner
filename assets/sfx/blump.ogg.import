@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/blump.ogg-66e53ee2b264d7988f8228cff58c57e1.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/blump.ogg"
+dest_files=[ "res://.import/blump.ogg-66e53ee2b264d7988f8228cff58c57e1.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
