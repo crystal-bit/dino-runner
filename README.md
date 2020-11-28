@@ -6,8 +6,8 @@ Simple pixel art game made for a beginner introduction on game development with 
 
 ### License
 
-**Code**: [MIT](https://github.com/crystal-bit/dino-runner/blob/main/LICENSE)
-**sfx**: CC0, made by davcri with [LSDj](https://www.littlesounddj.com/lsd/index.php)  
+**Code**: [MIT](https://github.com/crystal-bit/dino-runner/blob/main/LICENSE)  
+**sfx**: CC0, made by davcri with [LSDj](https://www.littlesounddj.com/lsd/index.php)   
 **sprites**: CC0, made by davcri with [aseprite](https://www.aseprite.org/)  
 **Fonts**:
 - https://arcade.itch.io/heartbit
